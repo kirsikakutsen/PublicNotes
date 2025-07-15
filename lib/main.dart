@@ -2,7 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:notes/firebase_options.dart';
 import 'package:notes/ui/note_details/note_details.dart';
-import 'package:notes/ui/notes/notes_list.dart';
+import 'package:notes/ui/notes_list/notes_list.dart';
 import 'package:notes/utils/routes.dart';
 
 void main() async {

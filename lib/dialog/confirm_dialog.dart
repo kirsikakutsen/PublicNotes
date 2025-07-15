@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:notes/theme/colors.dart';
+import 'package:notes/ui/theme/colors.dart';
 
 Future<void> showConfirmDialog({
   required BuildContext context,
@@ -40,7 +40,7 @@ Future<void> showConfirmDialog({
             SizedBox(height: 16),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 10.0),
-              child: Divider(color: AppColors.hintTextColor, thickness: 1),
+              child: Divider(color: AppColors.dialogDivider, thickness: 1),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -50,7 +50,7 @@ Future<void> showConfirmDialog({
                   child: Text(
                     negativeActionTitle,
                     style: TextStyle(
-                      color: AppColors.hintTextColor,
+                      color: AppColors.hintText,
                       fontWeight: FontWeight.normal,
                       fontSize: 18,
                     ),
@@ -61,7 +61,7 @@ Future<void> showConfirmDialog({
                   child: Text(
                     positiveActionTitle,
                     style: TextStyle(
-                      color: Colors.redAccent,
+                      color: AppColors.confirmDelete,
                       fontWeight: FontWeight.w500,
                       fontSize: 18,
                     ),

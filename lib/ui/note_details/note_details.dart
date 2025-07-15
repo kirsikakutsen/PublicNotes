@@ -4,7 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:notes/dialog/confirm_dialog.dart';
 import 'package:notes/models/notes_model.dart';
 import 'package:notes/services/database_service.dart';
-import 'package:notes/theme/colors.dart';
+import 'package:notes/ui/theme/colors.dart';
 import 'package:notes/utils/routes.dart';
 
 class NoteDetails extends StatefulWidget {
@@ -41,10 +41,10 @@ class _NoteDetailsState extends State<NoteDetails> {
       context: context,
       builder:
           (_) => const Center(
-            child: CircularProgressIndicator(color: AppColors.fabColor),
+            child: CircularProgressIndicator(color: AppColors.circularProgressIndicator),
           ),
       barrierDismissible: false,
-    );
+    ); 
 
     try {
       await service.addNote(
@@ -81,7 +81,7 @@ class _NoteDetailsState extends State<NoteDetails> {
       context: context,
       builder:
           (_) => const Center(
-            child: CircularProgressIndicator(color: AppColors.fabColor),
+            child: CircularProgressIndicator(color: AppColors.circularProgressIndicator),
           ),
       barrierDismissible: false,
     );
@@ -135,7 +135,7 @@ class _NoteDetailsState extends State<NoteDetails> {
           context: context,
           builder:
               (_) => const Center(
-                child: CircularProgressIndicator(color: AppColors.fabColor),
+                child: CircularProgressIndicator(color: AppColors.circularProgressIndicator),
               ),
           barrierDismissible: false,
         );
@@ -205,16 +205,16 @@ class _NoteDetailsState extends State<NoteDetails> {
             });
           },
           controller: _titleController,
-          cursorColor: AppColors.fabColor,
+          cursorColor: AppColors.inputFieldCursor,
           style: TextStyle(
             fontSize: 48,
             fontWeight: FontWeight.bold,
-            color: AppColors.textColor,
+            color: AppColors.text,
           ),
           decoration: const InputDecoration(
             border: InputBorder.none,
             hintText: 'Title',
-            hintStyle: TextStyle(color: AppColors.hintTextColor),
+            hintStyle: TextStyle(color: AppColors.hintText),
           ),
           maxLines: null,
         ),
@@ -227,12 +227,12 @@ class _NoteDetailsState extends State<NoteDetails> {
               });
             },
             controller: _descriptionController,
-            cursorColor: AppColors.fabColor,
-            style: TextStyle(fontSize: 24, color: AppColors.textColor),
+            cursorColor: AppColors.inputFieldCursor,
+            style: TextStyle(fontSize: 24, color: AppColors.text),
             decoration: const InputDecoration(
               border: InputBorder.none,
               hintText: 'Start typing your note...',
-              hintStyle: TextStyle(color: AppColors.hintTextColor),
+              hintStyle: TextStyle(color: AppColors.hintText),
             ),
             maxLines: null,
             keyboardType: TextInputType.multiline,
@@ -244,13 +244,13 @@ class _NoteDetailsState extends State<NoteDetails> {
 
   AppBar _topAppBar(BuildContext context, bool isSaveBtnActive) {
     return AppBar(
-      backgroundColor: AppColors.cardColor,
-      surfaceTintColor: AppColors.cardColor,
+      backgroundColor: AppColors.topBarDetailsScreen,
+      surfaceTintColor: AppColors.topBarDetailsScreen,
       leading: GestureDetector(
         onTap: () {
           Navigator.pop(context);
         },
-        child: Icon(Icons.arrow_back, color: AppColors.fabColor),
+        child: Icon(Icons.arrow_back, color: AppColors.arrowBack),
       ),
       actions: [
         Padding(
@@ -266,8 +266,8 @@ class _NoteDetailsState extends State<NoteDetails> {
               style: TextStyle(
                 color:
                     _isSaveBtnActive
-                        ? AppColors.fabColor
-                        : AppColors.hintTextColor,
+                        ? AppColors.textButtonActive
+                        : AppColors.textButtonInactive,
                 fontSize: 18,
               ),
             ),
@@ -282,7 +282,7 @@ class _NoteDetailsState extends State<NoteDetails> {
       onPressed: () {
         _deleteNote(id);
       },
-      backgroundColor: AppColors.fabColor,
+      backgroundColor: AppColors.fab,
       child: SvgPicture.asset("assets/icons/ic_delete.svg"),
     );
   }
