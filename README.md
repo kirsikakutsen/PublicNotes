@@ -7,7 +7,7 @@ A cross-platform notes application built with Flutter and Firebase. This app all
 ### Core Functionality
 - **Create Notes**: Add new notes with title and description
 - **Edit Notes**: Modify existing notes with real-time updates
-- **View Notes**: Browse all notes in an organized list
+- **View Notes**: Read all user's notes in an organized list
 - **Delete Notes**: Remove notes with confirmation dialog
 - **Real-time Sync**: All data is synchronized with Firebase Firestore
 - **Cross-platform**: Works on Android and iOS
