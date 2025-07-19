@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: '/notesList',
+      initialRoute: Routes.NotesList,
       routes: {
         Routes.NoteDetails: (context) => const NoteDetails(),
         Routes.NotesList: (context) => const NotesList(),
