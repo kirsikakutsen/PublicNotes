@@ -107,8 +107,7 @@ lib/
 - `flutter_lints`: Code linting
 - `flutter_launcher_icons`: App icon generation
 - 
-<img width="1290" height="2796" alt="Simulator Screenshot - iPhone 16 Plus - 2025-07-19 at 20 31 31" src="https://github.com/user-attachments/assets/24a2cd6b-9506-4f72-9edf-16c2c2c2ab6a" />
-<img width="1290" height="2796" alt="Simulator Screenshot - iPhone 16 Plus - 2025-07-19 at 20 31 06" src="https://github.com/user-attachments/assets/39eff629-9dd5-43aa-bacb-673c68c50cd2" />
-<img width="1290" height="2796" alt="Simulator Screenshot - iPhone 16 Plus - 2025-07-19 at 20 30 52" src="https://github.com/user-attachments/assets/8e668dfd-9fcb-445b-b3d2-9c07ea6036fd" />
+<img src="https://github.com/user-attachments/assets/24a2cd6b-9506-4f72-9edf-16c2c2c2ab6a" width="300" />
+<img src="https://github.com/user-attachments/assets/39eff629-9dd5-43aa-bacb-673c68c50cd2" width="300" />
+<img src="https://github.com/user-attachments/assets/8e668dfd-9fcb-445b-b3d2-9c07ea6036fd" width="300" />
 
-  
